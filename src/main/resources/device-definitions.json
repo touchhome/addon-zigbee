@@ -1,0 +1,926 @@
+{
+  "Xaomi": {
+    "devices": [
+      {
+        "icon": "fas fa-shuffle",
+        "iconColor": "#57A4D1",
+        "models": [
+          "lumi.relay.c2acn01"
+        ],
+        "endpoints": [
+          {
+            "id": "power_consumption",
+            "type_id": "analog_input",
+            "endpoint": 1,
+            "unit": "Wh"
+          },
+          {
+            "id": "rely_channel_1",
+            "type_id": "switch_onoff",
+            "endpoint": 1
+          },
+          {
+            "id": "rely_channel_2",
+            "type_id": "switch_onoff",
+            "endpoint": 2
+          }
+        ]
+      },
+      {
+        "models": [
+          "lumi.weather"
+        ],
+        "icon": "fas fa-cloud",
+        "iconColor": "#57A4D1"
+      },
+      {
+        "models": [
+          "lumi.remote.b186acn01"
+        ],
+        "icon": "fas fa-circle-dot",
+        "iconColor": "#D1C155"
+      },
+      {
+        "models": [
+          "lumi.sensor_smoke"
+        ],
+        "icon": "fas fa-volcano",
+        "iconColor": "#EB6933"
+      },
+      {
+        "icon": "fas fa-circle-dot",
+        "iconColor": "#B5C64E",
+        "models": [
+          "lumi.remote.b286acn01"
+        ],
+        "category": "WallSwitch",
+        "endpoints": [
+          {
+            "id": "left_button",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 18,
+              "shortpress_attribute_id": 85,
+              "shortpress_attribute_value": 1,
+              "longpress_cluster_id": 18,
+              "longpress_attribute_id": 85,
+              "longpress_attribute_value": 0,
+              "doublepress_cluster_id": 18,
+              "doublepress_attribute_id": 85,
+              "doublepress_attribute_value": 2
+            }
+          },
+          {
+            "id": "right_button",
+            "type_id": "button",
+            "endpoint": 2,
+            "meta": {
+              "shortpress_cluster_id": 18,
+              "shortpress_attribute_id": 85,
+              "shortpress_attribute_value": 1,
+              "longpress_cluster_id": 18,
+              "longpress_attribute_id": 85,
+              "longpress_attribute_value": 0,
+              "doublepress_cluster_id": 18,
+              "doublepress_attribute_id": 85,
+              "doublepress_attribute_value": 2
+            }
+          },
+          {
+            "id": "range-check",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 0,
+              "shortpress_attribute_id": 5,
+              "shortpress_attribute_value": "lumi.remote.b286acn01"
+            }
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-square-check",
+        "iconColor": "#B5C64E",
+        "models": [
+          "lumi.remote.b1acn01"
+        ],
+        "category": "WallSwitch",
+        "endpoints": [
+          {
+            "id": "center",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 18,
+              "shortpress_attribute_id": 85,
+              "shortpress_attribute_value": 1,
+              "longpress_cluster_id": 18,
+              "longpress_attribute_id": 85,
+              "longpress_attribute_value": 0,
+              "doublepress_cluster_id": 18,
+              "doublepress_attribute_id": 85,
+              "doublepress_attribute_value": 2
+            }
+          },
+          {
+            "id": "range-check",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 0,
+              "shortpress_attribute_id": 5,
+              "shortpress_attribute_value": "lumi.remote.b1acn01"
+            }
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-door-open",
+        "iconColor": "#A41CE2",
+        "models": [
+          "lumi.sensor_magnet.aq1"
+        ],
+        "endpoints": [
+          {
+            "id": "contact_switch",
+            "type_id": "switch_onoff",
+            "endpoint": 1,
+            "input_clusters": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-door-open",
+        "iconColor": "#A41CE2",
+        "models": [
+          "lumi.sensor_magnet.aq2"
+        ],
+        "endpoints": [
+          {
+            "id": "contact_switch",
+            "type_id": "switch_onoff",
+            "endpoint": 1,
+            "input_clusters": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-person-circle-exclamation",
+        "iconColor": "#56be9e",
+        "models": [
+          "lumi.sensor_motion.aq2"
+        ],
+        "endpoints": [
+          {
+            "type_id": "measurement_illuminance",
+            "endpoint": 1,
+            "input_clusters": [
+              1024
+            ]
+          },
+          {
+            "type_id": "sensor_occupancy",
+            "endpoint": 1,
+            "input_clusters": [
+              1030
+            ]
+          }
+        ]
+      },
+      {
+        "models": [
+          "lumi.sensor_86sw2"
+        ],
+        "icon": "fas fa-square-check",
+        "iconColor": "#56be9e",
+        "endpoints": [
+          {
+            "id": "left_button",
+            "type_id": "switch_onoff",
+            "endpoint": 1,
+            "input_clusters": [
+              6
+            ]
+          },
+          {
+            "id": "right_button",
+            "type_id": "switch_onoff",
+            "endpoint": 2,
+            "input_clusters": [
+              6
+            ]
+          },
+          {
+            "id": "both_button",
+            "type_id": "switch_onoff",
+            "endpoint": 3,
+            "input_clusters": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-plug-circle-bolt",
+        "iconColor": "#79BE56",
+        "models": [
+          "lumi.plug"
+        ],
+        "endpoints": [
+          {
+            "type_id": "switch_onoff",
+            "endpoint": 1,
+            "input_clusters": [
+              6
+            ]
+          },
+          {
+            "id": "power_consumption",
+            "type_id": "analog_input",
+            "endpoint": 2,
+            "unit": "Wh"
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-temperature-half",
+        "iconColor": "#79BE56",
+        "models": [
+          "lumi.sensor_ht"
+        ],
+        "endpoints": [
+          {
+            "type_id": "measurement_temperature",
+            "endpoint": 1,
+            "input_clusters": [
+              1026
+            ]
+          },
+          {
+            "type_id": "measurement_relativehumidity",
+            "endpoint": 1,
+            "input_clusters": [
+              1029
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-droplet",
+        "iconColor": "#be5692",
+        "models": [
+          "lumi.sensor_wleak.aq1"
+        ],
+        "endpoints": [
+          {
+            "type_id": "ias_water",
+            "endpoint": 1,
+            "input_clusters": [
+              1280
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-circle-dot",
+        "iconColor": "#B5C64E",
+        "models": [
+          "lumi.sensor_switch.aq1"
+        ],
+        "endpoints": [
+          {
+            "type_id": "switch_onoff",
+            "endpoint": 1,
+            "input_clusters": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "models": [
+          "lumi.sensor_switch.aq2"
+        ],
+        "category": "WallSwitch",
+        "icon": "fas fa-circle-dot",
+        "iconColor": "#B5C64E",
+        "endpoints": [
+          {
+            "id": "center_button",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 6,
+              "shortpress_attribute_id": 0,
+              "shortpress_attribute_value": true,
+              "doublepress_cluster_id": 6,
+              "doublepress_attribute_id": 32768,
+              "doublepress_attribute_value": 2
+            }
+          },
+          {
+            "id": "range-check",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 0,
+              "shortpress_attribute_id": 5,
+              "shortpress_attribute_value": "lumi.sensor_switch.aq2"
+            }
+          }
+        ]
+      },
+      {
+        "models": [
+          "lumi.ctrl_ln2.aq1"
+        ],
+        "icon": "fas fa-square-check",
+        "iconColor": "#B5C64E",
+        "category": "WallSwitch",
+        "endpoints": [
+          {
+            "id": "left_button",
+            "type_id": "switch_onoff",
+            "endpoint": 1
+          },
+          {
+            "id": "right_button",
+            "type_id": "switch_onoff",
+            "endpoint": 2
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-cube",
+        "iconColor": "#878fc9",
+        "models": [
+          "lumi.sensor_cube.aqgl01"
+        ],
+        "endpoints": [
+          {
+            "id": "turn_shake",
+            "type_id": "multistate_input",
+            "endpoint": 2
+          },
+          {
+            "id": "rotate",
+            "type_id": "analog_input",
+            "endpoint": 3
+          }
+        ]
+      }
+    ]
+  },
+  "Innr": {
+    "devices": [
+      {
+        "models": [
+          "innr-rc-110"
+        ],
+        "icon": "fas fa-gamepad",
+        "iconColor": "#878fc9",
+        "endpoints": [
+          {
+            "id": "scenesOn",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 6,
+              "shortpress_command_id": 1
+            }
+          },
+          {
+            "id": "scenesOff",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 6,
+              "shortpress_command_id": 0
+            }
+          },
+          {
+            "id": "scenesMinus",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 2,
+              "shortpress_parameter_name": "stepMode",
+              "shortpress_parameter_value": 1,
+              "longpress_cluster_id": 8,
+              "longpress_command_id": 1,
+              "longpress_parameter_name": "moveMode",
+              "longpress_parameter_value": 1
+            }
+          },
+          {
+            "id": "scenesPlus",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 2,
+              "shortpress_parameter_name": "stepMode",
+              "shortpress_parameter_value": 0,
+              "longpress_cluster_id": 8,
+              "longpress_command_id": 1,
+              "longpress_parameter_name": "moveMode",
+              "longpress_parameter_value": 0
+            }
+          },
+          {
+            "id": "scenes1",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 4,
+              "shortpress_parameter_name": "level",
+              "shortpress_parameter_value": 2
+            }
+          },
+          {
+            "id": "scenes2",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 4,
+              "shortpress_parameter_name": "level",
+              "shortpress_parameter_value": 52
+            }
+          },
+          {
+            "id": "scenes3",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 4,
+              "shortpress_parameter_name": "level",
+              "shortpress_parameter_value": 102
+            }
+          },
+          {
+            "id": "scenes4",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 4,
+              "shortpress_parameter_name": "level",
+              "shortpress_parameter_value": 153
+            }
+          },
+          {
+            "id": "scenes5",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 4,
+              "shortpress_parameter_name": "level",
+              "shortpress_parameter_value": 194
+            }
+          },
+          {
+            "id": "scenes6",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 4,
+              "shortpress_parameter_name": "level",
+              "shortpress_parameter_value": 254
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Bitron": {
+    "devices": [
+      {
+        "models": [
+          "bitron-video-902010-23"
+        ],
+        "icon": "fas fa-gamepad",
+        "iconColor": "#878fc9",
+        "endpoints": [
+          {
+            "id": "button1",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 6,
+              "shortpress_parameter_name": "stepMode",
+              "shortpress_parameter_value": 1
+            }
+          },
+          {
+            "id": "button2",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 6,
+              "shortpress_command_id": 1
+            }
+          },
+          {
+            "id": "button1",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 6,
+              "shortpress_command_id": 0
+            }
+          },
+          {
+            "id": "button1",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 6,
+              "shortpress_parameter_name": "stepMode",
+              "shortpress_parameter_value": 1
+            }
+          }
+        ]
+      },
+      {
+        "models": [
+          "bitron-video-av2010-34"
+        ],
+        "icon": "fas fa-gamepad",
+        "iconColor": "#878fc9",
+        "endpoints": [
+          {
+            "id": "button1",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 5,
+              "shortpress_command_id": 5,
+              "shortpress_parameter_name": "sceneId",
+              "shortpress_parameter_value": 1
+            }
+          },
+          {
+            "id": "button2",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 5,
+              "shortpress_command_id": 5,
+              "shortpress_parameter_name": "sceneId",
+              "shortpress_parameter_value": 2
+            }
+          },
+          {
+            "id": "button3",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 5,
+              "shortpress_command_id": 5,
+              "shortpress_parameter_name": "sceneId",
+              "shortpress_parameter_value": 3
+            }
+          },
+          {
+            "id": "button4",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 5,
+              "shortpress_command_id": 5,
+              "shortpress_parameter_name": "sceneId",
+              "shortpress_parameter_value": 4
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Philips": {
+    "devices": [
+      {
+        "models": [
+          "philips_rwl021"
+        ],
+        "icon": "fas fa-up-down",
+        "iconColor": "#E4BD4C",
+        "endpoints": [
+          {
+            "type_id": "switch_level",
+            "endpoint": 1
+          },
+          {
+            "id": "buttonI",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 6,
+              "shortpress_command_id": 1
+            }
+          },
+          {
+            "id": "buttonO",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 6,
+              "shortpress_command_id": 64
+            }
+          },
+          {
+            "id": "dimUp",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 2,
+              "shortpress_parameter_name": "stepMode",
+              "shortpress_parameter_value": 0
+            }
+          },
+          {
+            "id": "dimDown",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 2,
+              "shortpress_parameter_name": "stepMode",
+              "shortpress_parameter_value": 1
+            }
+          },
+          {
+            "type_id": "battery_level",
+            "endpoint": 2
+          },
+          {
+            "type_id": "battery_voltage",
+            "endpoint": 2
+          }
+        ]
+      },
+      {
+        "models": [
+          "philips_rwl022"
+        ],
+        "icon": "fas fa-up-down",
+        "iconColor": "#E4BD4C",
+        "endpoints": [
+          {
+            "type_id": "switch_level",
+            "endpoint": 1
+          },
+          {
+            "id": "buttonI",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 6,
+              "shortpress_command_id": 1
+            }
+          },
+          {
+            "id": "buttonO",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 6,
+              "shortpress_command_id": 64
+            }
+          },
+          {
+            "id": "dimUp",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 2,
+              "shortpress_parameter_name": "stepMode",
+              "shortpress_parameter_value": 0
+            }
+          },
+          {
+            "id": "dimDown",
+            "type_id": "button",
+            "endpoint": 1,
+            "meta": {
+              "shortpress_cluster_id": 8,
+              "shortpress_command_id": 2,
+              "shortpress_parameter_name": "stepMode",
+              "shortpress_parameter_value": 1
+            }
+          },
+          {
+            "type_id": "battery_level",
+            "endpoint": 1
+          },
+          {
+            "type_id": "battery_voltage",
+            "endpoint": 1
+          }
+        ]
+      },
+      {
+        "models": [
+          "philips_sml001"
+        ],
+        "icon": "fas fa-eye",
+        "iconColor": "#56be9e",
+        "endpoints": [
+          {
+            "type_id": "sensor_occupancy",
+            "endpoint": 2
+          },
+          {
+            "type_id": "measurement_illuminance",
+            "endpoint": 2
+          },
+          {
+            "type_id": "measurement_temperature",
+            "endpoint": 2
+          },
+          {
+            "type_id": "battery_level",
+            "endpoint": 2
+          }
+        ]
+      }
+    ]
+  },
+  "Tuya": {
+    "devices": [
+      {
+        "icon": "fas fa-toggle-on",
+        "iconColor": "#B5C64E",
+        "category": "WallSwitch",
+        "models": [
+          "TS0041"
+        ],
+        "endpoints": [
+          {
+            "type_id": "battery_voltage",
+            "endpoint": 1
+          },
+          {
+            "type_id": "battery_level",
+            "endpoint": 1
+          },
+          {
+            "type_id": "battery_alarm",
+            "endpoint": 1
+          },
+          {
+            "id": "center_button",
+            "type_id": "tuya_button",
+            "endpoint": 1
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-toggle-on",
+        "iconColor": "#B5C64E",
+        "category": "WallSwitch",
+        "models": [
+          "TS0042"
+        ],
+        "endpoints": [
+          {
+            "type_id": "battery_voltage",
+            "endpoint": 1
+          },
+          {
+            "type_id": "battery_level",
+            "endpoint": 1
+          },
+          {
+            "type_id": "battery_alarm",
+            "endpoint": 1
+          },
+          {
+            "id": "left_button",
+            "type_id": "tuya_button",
+            "endpoint": 1
+          },
+          {
+            "id": "right_button",
+            "type_id": "tuya_button",
+            "endpoint": 2
+          }
+        ]
+      },
+      {
+        "icon": "fas fa-toggle-on",
+        "iconColor": "#B5C64E",
+        "category": "WallSwitch",
+        "models": [
+          "TS0043"
+        ],
+        "endpoints": [
+          {
+            "type_id": "battery_voltage",
+            "endpoint": 1
+          },
+          {
+            "type_id": "battery_level",
+            "endpoint": 1
+          },
+          {
+            "type_id": "battery_alarm",
+            "endpoint": 1
+          },
+          {
+            "id": "left_button",
+            "type_id": "tuya_button",
+            "endpoint": 1
+          },
+          {
+            "id": "center_button",
+            "type_id": "tuya_button",
+            "endpoint": 2
+          },
+          {
+            "id": "right_button",
+            "type_id": "tuya_button",
+            "endpoint": 3
+          }
+        ]
+      },
+      {
+        "category": "WallSwitch",
+        "icon": "fas fa-toggle-on",
+        "iconColor": "#B5C64E",
+        "models": [
+          "TS0044"
+        ],
+        "endpoints": [
+          {
+            "type_id": "power_voltage",
+            "endpoint": 1
+          },
+          {
+            "type_id": "battery_level",
+            "endpoint": 1
+          },
+          {
+            "type_id": "battery_alarm",
+            "endpoint": 1
+          },
+          {
+            "id": "button1",
+            "type_id": "tuya_button",
+            "endpoint": 1
+          },
+          {
+            "id": "button2",
+            "type_id": "tuya_button",
+            "endpoint": 2
+          },
+          {
+            "id": "button3",
+            "type_id": "tuya_button",
+            "endpoint": 3
+          },
+          {
+            "id": "button4",
+            "type_id": "tuya_button",
+            "endpoint": 4
+          }
+        ]
+      }
+    ]
+  },
+  "Legrand": {
+    "devices": [
+      {
+        "models": [
+          "legrand_dimmer_without_neutral"
+        ],
+        "icon": "fas fa-toggle-on",
+        "iconColor": "#B5C64E",
+        "endpoints": [
+          {
+            "type_id": "switch_onoff",
+            "endpoint": 1
+          },
+          {
+            "type_id": "switch_level",
+            "endpoint": 1
+          }
+        ]
+      }
+    ]
+  }
+}

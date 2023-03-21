@@ -1,0 +1,252 @@
+{
+  "IAS_ZONE": {
+    "report": {
+      "min": 3
+    }
+  },
+  "PRESSURE_MEASUREMENT": {
+    "report": {
+      "change": 0.1,
+      "failedPollingInterval": 60,
+      "bindFailedPollingInterval": 60
+    }
+  },
+  "ON_OFF": {
+    "attributes": [
+      {
+        "id": "0x0000",
+        "name": "ATTR_ONOFF",
+        "report": {
+          "configurable": true,
+          "failedPollingInterval": 60,
+          "bindFailedPollingInterval": 60
+        }
+      }
+    ]
+  },
+  "FAN_CONTROL": {
+    "attributes": [
+      {
+        "id": "0x0000",
+        "name": "ATTR_FANMODE",
+        "report": {
+          "failedPollingInterval": 60,
+          "bindFailedPollingInterval": 60
+        }
+      }
+    ]
+  },
+  "DOOR_LOCK": {
+    "attributes": [
+      {
+        "id": "0x0000",
+        "name": "ATTR_LOCKSTATE",
+        "report": {
+          "failedPollingInterval": 60,
+          "bindFailedPollingInterval": 60
+        }
+      }
+    ]
+  },
+  "TEMPERATURE_MEASUREMENT": {
+    "attributes": [
+      {
+        "id": "0x0000",
+        "name": "ATTR_MEASUREDVALUE",
+        "report": {
+          "change": 10
+        }
+      }
+    ]
+  },
+  "POWER_CONFIGURATION": {
+    "report": {
+      "min": 600
+    },
+    "attributes": [
+      {
+        "id": "0x0000",
+        "name": "ATTR_MAINSVOLTAGE",
+        "readAttributes": true
+      },
+      {
+        "id": "0x0020",
+        "name": "ATTR_BATTERYVOLTAGE",
+        "readAttributes": true,
+        "report": {
+          "change": 1,
+          "failedPollingInterval": 60
+        }
+      },
+      {
+        "id": "0x0021",
+        "name": "ATTR_BATTERYPERCENTAGEREMAINING",
+        "readAttributes": true,
+        "report": {
+          "change": 1,
+          "failedPollingInterval": 60
+        }
+      },
+      {
+        "id": "0x003E",
+        "name": "ATTR_BATTERYALARMSTATE",
+        "discoverAttributes": true,
+        "failedPollingInterval": 1800
+      }
+    ]
+  },
+  "LEVEL_CONTROL": {
+    "report": {
+      "configurable": true
+    }
+  },
+  "WINDOW_COVERING": {
+    "attributes": [
+      {
+        "id": "0x0008",
+        "name": "ATTR_CURRENTPOSITIONLIFTPERCENTAGE",
+        "report": {
+          "configurable": true,
+          "failedPollingInterval": 60,
+          "bindFailedPollingInterval": 60
+        }
+      }
+    ]
+  },
+  "THERMOSTAT": {
+    "readAttributes": true,
+    "attributes": [
+      {
+        "id": "0x0014",
+        "name": "ATTR_UNOCCUPIEDHEATINGSETPOINT",
+        "report": {
+          "change": 10
+        }
+      },
+      {
+        "id": "0x0013",
+        "name": "ATTR_UNOCCUPIEDCOOLINGSETPOINT",
+        "report": {
+          "change": 10
+        }
+      },
+      {
+        "id": "0x001E",
+        "name": "ATTR_THERMOSTATRUNNINGMODE",
+        "report": {
+          "change": 10
+        }
+      },
+      {
+        "id": "0x0001",
+        "name": "ATTR_OUTDOORTEMPERATURE",
+        "report": {
+          "change": 10
+        }
+      },
+      {
+        "id": "0x0012",
+        "name": "ATTR_OCCUPIEDHEATINGSETPOINT",
+        "report": {
+          "change": 10
+        }
+      },
+      {
+        "id": "0x0011",
+        "name": "ATTR_OCCUPIEDCOOLINGSETPOINT",
+        "report": {
+          "change": 10
+        }
+      },
+      {
+        "id": "0x0000",
+        "name": "ATTR_LOCALTEMPERATURE",
+        "report": {
+          "change": 10
+        }
+      },
+      {
+        "id": "0x0007",
+        "name": "ATTR_PICOOLINGDEMAND",
+        "report": {
+          "configurable": true,
+          "change": 10
+        }
+      },
+      {
+        "id": "0x0008",
+        "name": "ATTR_PIHEATINGDEMAND",
+        "report": {
+          "configurable": true,
+          "change": 10
+        }
+      }
+    ]
+  },
+  "COLOR_CONTROL": {
+    "attributes": [
+      {
+        "id": "0x0007",
+        "name": "ATTR_COLORTEMPERATURE",
+        "report": {
+          "change": 1
+        }
+      }
+    ]
+  },
+  "ILLUMINANCE_MEASUREMENT": {
+    "attributes": [
+      {
+        "id": "0x0000",
+        "name": "ATTR_MEASUREDVALUE",
+        "report": {
+          "configurable": true
+        }
+      }
+    ]
+  },
+  "ANALOG_INPUT_BASIC": {
+    "report": {
+      "configurable": true
+    }
+  },
+  "RELATIVE_HUMIDITY_MEASUREMENT": {
+    "attributes": [
+      {
+        "id": "0x0000",
+        "name": "ATTR_MEASUREDVALUE",
+        "report": {
+          "change": 50,
+          "bindFailedPollingInterval": 60
+        }
+      }
+    ]
+  },
+  "METERING": {
+    "discoverAttributes": true,
+    "readAttributes": true,
+    "failedPollingInterval": 60,
+    "bindFailedPollingInterval": 60,
+    "report": {
+      "min": 3,
+      "change": 3
+    }
+  },
+  "ELECTRICAL_MEASUREMENT": {
+    "readAttributes": true,
+    "discoverAttributes": true,
+    "report": {
+      "min": 3,
+      "change": 1,
+      "failedPollingInterval": 60,
+      "bindFailedPollingInterval": 60
+    },
+    "attributes": [
+      {
+        "id": "0x050B",
+        "name": "ATTR_ACTIVEPOWER",
+        "discoverAttributes": false
+      }
+    ]
+  }
+}
