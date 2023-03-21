@@ -5,26 +5,19 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.fazecast</groupId>
-      <artifactId>jSerialComm</artifactId>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <artifactId>jackson-dataformat-yaml</artifactId>
-      <groupId>com.fasterxml.jackson.dataformat</groupId>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
       <artifactId>com.zsmartsystems.zigbee.dongle.cc2531</artifactId>
       <groupId>com.zsmartsystems.zigbee</groupId>
       <version>${zsmartsystems.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.annotation</groupId>
+          <artifactId>javax.annotation-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>
@@ -39,6 +32,7 @@
       <version>${zsmartsystems.version}</version>
     </dependency>
   </dependencies>
+
   <description>communication:ZigBee</description>
   <modelVersion>4.0.0</modelVersion>
   <name>ZigBee</name>
@@ -53,7 +47,7 @@
   <properties>
     <bundle.version>1.2.1-SNAPSHOT</bundle.version>
     <xstream.version>1.4.19</xstream.version>
-    <zsmartsystems.version>1.4.9</zsmartsystems.version>
+    <zsmartsystems.version>1.4.10</zsmartsystems.version>
   </properties>
 
   <version>1.0.0-SNAPSHOT</version>
