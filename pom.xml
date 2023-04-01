@@ -31,6 +31,13 @@
       <groupId>com.zsmartsystems.zigbee</groupId>
       <version>${zsmartsystems.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+
   </dependencies>
 
   <description>communication:ZigBee</description>
@@ -40,13 +47,12 @@
 
   <parent>
     <artifactId>addon-parent</artifactId>
-    <groupId>org.touchhome</groupId>
-    <version>1.2.1</version>
+    <groupId>org.homio</groupId>
+    <version>1.2.3</version>
   </parent>
 
   <properties>
     <category>Communication</category>
-    <bundle.version>1.2.1-SNAPSHOT</bundle.version>
     <xstream.version>1.4.19</xstream.version>
     <zsmartsystems.version>1.4.10</zsmartsystems.version>
   </properties>
