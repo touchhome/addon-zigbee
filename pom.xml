@@ -56,9 +56,5 @@
     <zsmartsystems.version>1.4.10</zsmartsystems.version>
   </properties>
 
-  <version>1.0.0</version>
-
-  <scm>
-    <tag>v1.0.0</tag>
-  </scm>
+  <version>1.0.1-SNAPSHOT</version>
 </project>
