@@ -3,7 +3,6 @@
     "ZigbeeCoordinatorEntity": "ZigBee coordinator"
   },
   "help": {
-    "field": {
       "colorControlMethod": "The commands used to control color. AUTO will use HUE if the device supports, otherwise XY",
       "enableAutoRelockTime": "",
       "fanModeSequence": "Possible fan modes that may be selected",
@@ -37,7 +36,6 @@
       "discoveryDuration": "Discovery duration in seconds",
       "networkId": "Network Id",
       "logEvents": "Log device events"
-    }
   },
   "field": {
     "cls": "CLS",
